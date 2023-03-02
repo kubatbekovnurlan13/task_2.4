@@ -1,4 +1,4 @@
-package kg.kubatbekov.task_23.model;
+package kg.kubatbekov.task_2_3.model;
 
 import org.springframework.stereotype.Component;
 

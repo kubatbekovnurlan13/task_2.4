@@ -1,6 +1,6 @@
-package kg.kubatbekov.task_23.rowMapper;
+package kg.kubatbekov.task_2_3.rowMapper;
 
-import kg.kubatbekov.task_23.model.Student;
+import kg.kubatbekov.task_2_3.model.Student;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

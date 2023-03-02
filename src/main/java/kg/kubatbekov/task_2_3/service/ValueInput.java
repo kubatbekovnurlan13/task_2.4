@@ -1,8 +1,8 @@
-package kg.kubatbekov.task_23.service;
+package kg.kubatbekov.task_2_3.service;
 
-import kg.kubatbekov.task_23.model.Course;
-import kg.kubatbekov.task_23.model.Group;
-import kg.kubatbekov.task_23.model.Student;
+import kg.kubatbekov.task_2_3.model.Course;
+import kg.kubatbekov.task_2_3.model.Group;
+import kg.kubatbekov.task_2_3.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -43,13 +43,11 @@ public class ValueInput implements CommandLineRunner {
         boolean check = courseService.addStudent(1, 15);
         System.out.println("Student with id: " + 15 + " added to course: " + 1 + " check: " + check);
         System.out.println("-------------------------------");
-        boolean rmCheck = courseService.removeStudent(1, 15);
-        System.out.println("Student with id: " + 15 + " removed from course: " + 1 + " check: " + check);
+        boolean rmCheck = courseService.deleteStudent(1, 15);
+        System.out.println("Student with id: " + 15 + " removed from course: " + 1 + " check: " + rmCheck);
         System.out.println("-------------------------------");
 
         doStuff();
-
-
     }
 
     private void doStuff() {
