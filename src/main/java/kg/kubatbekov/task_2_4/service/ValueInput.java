@@ -31,10 +31,10 @@ public class ValueInput implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        doStuff();
+        runConsoleApp();
     }
 
-    private void doStuff() {
+    private void runConsoleApp() {
         while (true) {
 
             logger.info("Log from {}, console application started", ValueInput.class.getSimpleName());
@@ -95,7 +95,7 @@ public class ValueInput implements CommandLineRunner {
         } else {
             System.out.println("Not worked!");
         }
-        doStuff();
+        runConsoleApp();
     }
 
     private void addStudentToCourseFromListService() {
@@ -128,7 +128,7 @@ public class ValueInput implements CommandLineRunner {
         } else {
             System.out.println("Not worked!");
         }
-        doStuff();
+        runConsoleApp();
 
     }
 
@@ -149,7 +149,7 @@ public class ValueInput implements CommandLineRunner {
         } else {
             System.out.println("Not worked!");
         }
-        doStuff();
+        runConsoleApp();
     }
 
     private void addNewStudentService() {
@@ -175,7 +175,7 @@ public class ValueInput implements CommandLineRunner {
         } else {
             System.out.println("Not worked!");
         }
-        doStuff();
+        runConsoleApp();
 
     }
 
@@ -200,7 +200,7 @@ public class ValueInput implements CommandLineRunner {
                 System.out.println(student);
             }
         }
-        doStuff();
+        runConsoleApp();
 
     }
 
@@ -224,7 +224,7 @@ public class ValueInput implements CommandLineRunner {
                 System.out.println(group);
             }
         }
-        doStuff();
+        runConsoleApp();
     }
 
     private int getCommand() {
